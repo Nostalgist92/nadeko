@@ -21,6 +21,9 @@ ln -s /root/nadeko/credentials.json /opt/NadekoBot/src/NadekoBot/credentials.jso
 #rm -rf /opt/NadekoBot/src/NadekoBot/bin/Release/netcoreapp2.0/data/ > /dev/null 2>&1
 #ln -s /root/nadeko/data/ /opt/NadekoBot/src/NadekoBot/bin/Release/netcoreapp2.0/data > /dev/null 2>&1
 
+# Ensure Redis is running
+service redis-server start
+
 echo ""
 echo "Running NadekoBot with auto restart Please wait."
 cd NadekoBot/src/NadekoBot
