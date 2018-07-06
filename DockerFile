@@ -12,7 +12,7 @@ RUN 	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 RUN 	add-apt-repository ppa:jonathonf/ffmpeg-3
 
 # Install required software
-RUN 	apt-get update && apt-get install -y git libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux rsync python dotnet-sdk-2.0.0 redis-server tzdata
+RUN 	apt-get update && apt-get install -y git libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux rsync python dotnet-sdk-2.1.4 redis-server tzdata
 
 
 #Add youtube-dl
