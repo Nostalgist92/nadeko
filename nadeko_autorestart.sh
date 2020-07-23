@@ -10,9 +10,9 @@ fi
 
 echo ""
 echo "Linking Nadeko Credentials"
-mv -n /opt/NadekoBot/src/NadekoBot/credentials.json /root/nadeko/credentials.json > /dev/null 2>&1
-rm /opt/NadekoBot/src/NadekoBot/credentials.json > /dev/null 2>&1
-ln -s /root/nadeko/credentials.json /opt/NadekoBot/src/NadekoBot/credentials.json > /dev/null 2>&1
+mv -n /opt/nadekobot/src/NadekoBot/credentials.json /root/nadeko/credentials.json > /dev/null 2>&1
+rm /opt/nadekobot/src/NadekoBot/credentials.json > /dev/null 2>&1
+ln -s /root/nadeko/credentials.json /opt/nadekobot/src/NadekoBot/credentials.json > /dev/null 2>&1
 
 #echo ""
 #echo "Linking Nadeko Data Folder"
@@ -26,7 +26,7 @@ service redis-server start
 
 echo ""
 echo "Running NadekoBot with auto restart Please wait."
-cd NadekoBot/src/NadekoBot
+cd nadekobot/src/NadekoBot
 while :; do dotnet run -c Release; sleep 5s; done
 echo "Done"
 
