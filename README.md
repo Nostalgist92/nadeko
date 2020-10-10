@@ -5,7 +5,7 @@ Full Documentation available @ http://nadekobot.readthedocs.io/en/latest/guides/
 
 ### Install
 
-    docker create --name=nadeko -v /nadeko/conf/:/root/nadeko -v /nadeko/data:/opt/NadekoBot/src/NadekoBot/bin/Release/netcoreapp2.0/data nozza/nadeko:latest
+    docker create --name=nadeko -v /nadeko/conf/:/root/nadeko -v /nadeko/data:/opt/nadekobot/src/NadekoBot/bin/Release/netcoreapp2.1/data nozza/nadeko:latest
 	
 Where `/nadeko/conf` is where you want your config files, and `/nadeko/data` is where you want your data files
 (Your credentials.json will be in the conf folder) [More on that here](http://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/)
@@ -19,7 +19,7 @@ Without monitoring: `docker start nadeko`
 
     docker pull nozza/nadeko:latest
     docker stop nadeko; docker rm nadeko
-    docker create --name=nadeko -v /nadeko/conf/:/root/nadeko -v /nadeko/data:/opt/NadekoBot/src/NadekoBot/bin/Release/netcoreapp2.0/data nozza/nadeko:latest
+    docker create --name=nadeko -v /nadeko/conf/:/root/nadeko -v /nadeko/data:/opt/nadekobot/src/NadekoBot/bin/Release/netcoreapp2.1/data nozza/nadeko:latest
 	
 ### Update (Auto)
 
